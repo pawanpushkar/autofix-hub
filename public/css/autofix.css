@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    color: #172033;
+    background:
+        radial-gradient(circle at 12% 12%, rgba(125, 211, 252, 0.55), transparent 30%),
+        radial-gradient(circle at 88% 18%, rgba(196, 181, 253, 0.55), transparent 32%),
+        radial-gradient(circle at 50% 100%, rgba(153, 246, 228, 0.4), transparent 35%),
+        linear-gradient(135deg, #edf7ff, #f4f0ff 55%, #e9fbf8);
+}
+
+main {
+    width: min(100%, 900px);
+    margin: 0 auto;
+    padding: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.58);
+    box-shadow: 0 20px 60px rgba(52, 72, 112, 0.14);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+}
+
+h1,
+h2,
+h3 {
+    color: #172554;
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    font-weight: 600;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 12px 14px;
+    margin-top: 7px;
+    border: 1px solid rgba(148, 163, 184, 0.45);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.78);
+    color: #172033;
+    font: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: 3px solid rgba(96, 165, 250, 0.25);
+    border-color: #60a5fa;
+}
+
+button,
+.button {
+    display: inline-block;
+    padding: 12px 18px;
+    margin: 10px 8px 0 0;
+    border: 0;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    box-shadow: 0 8px 18px rgba(79, 70, 229, 0.22);
+    color: white;
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover,
+.button:hover {
+    filter: brightness(1.06);
+}
+
+.request,
+.quote {
+    padding: 22px 26px;
+    margin: 18px 0;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.68);
+    box-shadow: 0 12px 30px rgba(52, 72, 112, 0.09);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+}
+
+.quote {
+    margin-left: 20px;
+    border-left: 4px solid #818cf8;
+}
+
+.status {
+    color: #047857;
+    font-weight: 700;
+}
+
+.success {
+    padding: 14px 16px;
+    border: 1px solid rgba(16, 185, 129, 0.22);
+    border-radius: 12px;
+    background: rgba(209, 250, 229, 0.75);
+    color: #065f46;
+}
+
+.error {
+    color: #b91c1c;
+}
+
+.accept-button {
+    background: linear-gradient(135deg, #059669, #10b981);
+}
+
+.complete-button {
+    background: linear-gradient(135deg, #475569, #64748b);
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    main {
+        padding: 22px 18px;
+    }
+
+    .quote {
+        margin-left: 8px;
+        padding: 18px;
+    }
+}
